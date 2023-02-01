@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/df.png" alt="picture of dwarf fortress logo">
+<table border="1" bordercolor = red>
+<h1>Dwarf Fortress</h1>
+<p>Dwarf fortress is a passion project of Tarn Adams and his brother, Zach Adams. This game has been in production for over 20 years and is the inspiration for many other games.</p>
+<p>Some of the games it has inspired are as follows:</p>
+<ul>
+    <li>The Sims</li>
+    <li>Rim World</li>
+    <li>Minecraft</li>
+</ul>
+<a href="https://www.bay12games.com/">Bay 12 Games Website</a>
+
+<style id="style" contenteditable style = "display: block; white-space: pre;">
+html{
+background: tan;
+}</style>
+
+
+<script>
+    var rand;
+ setInterval(
+   function(){
+      
+      
+    rand = Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById("style").innerHTML = "*{transition:2s}html{background: #" + rand +";}";
+  },1000)
+    </script>
+</table>
+</body>
+</html>
